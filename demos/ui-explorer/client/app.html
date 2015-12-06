@@ -1,0 +1,86 @@
+<md-grid-list class="ui" cols="4" row-height="50px" gutter-size="0.5em">
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Buttons</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="1">
+    <button md-raised-button class="md-primary">Primary</button>
+  </md-grid-tile>
+  <md-grid-tile rowspan="1" colspan="1">
+    <button md-button class="md-default">Default</button>
+  </md-grid-tile>
+    <md-grid-tile rowspan="1" colspan="1">
+    <button md-raised-button class="md-default">Raised</button>
+  </md-grid-tile>
+  <md-grid-tile rowspan="1" colspan="1">
+    <button md-fab class="md-primary">Fab</button>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Inputs</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-input-container>
+      <input placeholder="Basic input">
+    </md-input-container>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Checkbox and Switch</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-checkbox></md-checkbox>
+  </md-grid-tile>
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-switch></md-switch>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Progress Bars</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Radio</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-radio-button></md-radio-button>
+  </md-grid-tile>
+  <md-grid-tile rowspan="1" colspan="2">
+    <md-radio-group value="1">
+      <md-radio-button value="1"></md-radio-button>
+      <md-radio-button value="2"></md-radio-button>
+    </md-radio-group>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Dialog</div>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="2">
+    <dialog></dialog>
+    <button md-raised-button class="md-default" (click)="open()" [disabled]="dialog && dialog.opened">
+      Open Dialog
+    </button>
+  </md-grid-tile>
+
+  <md-grid-tile rowspan="1" colspan="4">
+    <div class="title">Grid</div>
+  </md-grid-tile>
+
+  <md-grid-tile class="grid" rowspan="1" colspan="4">
+    <md-grid-list class="grid" cols="4" row-height="25px" gutter-size="2em">
+      <md-grid-tile rowspan="1" colspan="2"> Tile #1 </md-grid-tile>
+      <md-grid-tile rowspan="2" colspan="2"> Tile #2 </md-grid-tile>
+      <md-grid-tile rowspan="3" colspan="2"> Tile #3 </md-grid-tile>
+      <md-grid-tile rowspan="1" colspan="2"> Tile #4 </md-grid-tile>
+      <md-grid-tile rowspan="1" colspan="4"> Tile #5 </md-grid-tile>
+    </md-grid-list>
+  </md-grid-tile>
+</md-grid-list>
